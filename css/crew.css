@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Bellefair', serif;
+}
+
+.myNavbar {
+  background-color: rgba(63, 63, 63, 0.596);
+  backdrop-filter: blur(15px);
+}
+
+.navSystem a {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.7px;
+}
+
+body {
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Tablet Screen*/
+
+@media screen and (max-width: 992px) {
+  body {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+/* Mobile Screen */
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .myNavbar {
+    background-color: rgba(63, 63, 63, 0.596);
+    backdrop-filter: blur(15px);
+  }
+  .myXbtn {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+  }
+  .destination {
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  .mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 2rem 1rem;
+  }
+  .heading {
+    color: white;
+    text-align: center;
+  }
+  .heading h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2px;
+  }
+  .imgDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .imgDiv img {
+    width: 60%;
+    height: 60%;
+  }
+  .btnDiv {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .myBtn {
+    padding: 5px 5px;
+    border-radius: 10px;
+    background-color: #979797;
+    border: none;
+  }
+  .btnDiv .myBtn:active {
+    background-color: white;
+  }
+  .btnDiv .myBtn:hover {
+    background-color: white;
+  }
+  .pageName {
+    color: white;
+    text-align: center;
+  }
+  .pageName .moreText,
+  .anotherText {
+    font-family: 'Bellefair', serif;
+  }
+  .pageName .bio {
+    font-family: 'Barlow', sans-serif;
+  }
+  .myLine {
+    border-bottom: 2px solid #383b4b;
+    width: 90%;
+    align-self: center;
+  }
+  .moreText {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+/* Font families */
+
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif; */

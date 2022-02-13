@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Bellefair', serif;
+}
+
+.myNavbar {
+  background-color: rgba(63, 63, 63, 0.596);
+  backdrop-filter: blur(15px);
+  width: 75%;
+  background-color: white;
+}
+
+.logo {
+  padding: 2rem;
+  color: green;
+}
+
+.navSystem a {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.7px;
+}
+
+body {
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Tablet Screen*/
+
+@media screen and (max-width: 992px) {
+  body {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+/* Mobile Screen */
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .myNavbar {
+    background-color: rgba(63, 63, 63, 0.596);
+    backdrop-filter: blur(15px);
+  }
+  .myText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .circle {
+    width: 150px;
+    height: 150px;
+    line-height: 100px;
+    border-radius: 50%;
+    color: #000;
+    text-align: center;
+    background: #ffffff;
+    margin-top: 2rem;
+    box-shadow: none;
+    font-size: 1.3rem;
+  }
+  .text {
+    margin-top: 6rem;
+  }
+  .text p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 2.7px;
+  }
+  .textSpace {
+    margin-top: 0.5rem 0;
+  }
+  .textSpace h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 4rem;
+  }
+  .lastText {
+    width: 90%;
+  }
+  .lastText p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.9rem;
+  }
+  .circle:hover {
+    box-shadow: 0px 0px 0px 37px #979797;
+  }
+  .circle button {
+    font-family: 'Bellefair', serif;
+    letter-spacing: 1.25px;
+  }
+  .myXbtn {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+  }
+}
+
+/* Font families */
+
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif; */

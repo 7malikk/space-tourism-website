@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Bellefair', serif;
+}
+
+.myNavbar {
+  background-color: rgba(63, 63, 63, 0.596);
+  backdrop-filter: blur(15px);
+}
+
+.navSystem a {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.7px;
+}
+
+body {
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Tablet Screen*/
+
+@media screen and (max-width: 992px) {
+  body {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+/* Mobile Screen */
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .myNavbar {
+    background-color: rgba(63, 63, 63, 0.596);
+    backdrop-filter: blur(15px);
+  }
+
+  .myXbtn {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+  }
+  .destination {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  .mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  .heading {
+    color: white;
+    text-align: center;
+  }
+  .heading .headNum {
+    color: black;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.7px;
+  }
+  .imgDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .imgDiv img {
+    width: 60%;
+    height: 60%;
+  }
+  .btnDiv {
+    margin-top: 2rem;
+    display: flex;
+    /* align-self: center; */
+    justify-content: space-around;
+  }
+  .btnDiv a {
+    text-decoration: none;
+    background: none;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.36px;
+  }
+  .btnDiv .moon:active {
+    border-bottom: 6px solid white;
+  }
+  .btnDiv a:hover {
+    border-bottom: 6px solid #979797;
+  }
+  .pageName {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .myLine {
+    border-bottom: 2px solid #383b4b;
+    width: 90%;
+    align-self: center;
+  }
+  .moreText {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+/* Font families */
+
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif; */

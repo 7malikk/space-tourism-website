@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+
+  <body>
+    <main class="d-flex align-items-center justify-content-between">
+      <nav
+        class="navigation-bar navbar navbar-expand-lg navbar-expand-md navbar-light fixed-top"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/html/index.html">
+            <img src="../assets/shared/logo.svg" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler btn btn-close-white"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="text-light navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end myNavbar"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header myXbtn">
+              <button
+                type="button"
+                class="btn-close text-reset btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav navSystem">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light"
+                    aria-current="page"
+                    href="/html/index.html"
+                    ><strong class="navNum">00</strong> HOME</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="/html/destination.html"
+                    ><strong class="navNum">01</strong> DESTINATION</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="/html/crew.html"
+                    ><strong class="navNum">02</strong> CREW</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="/html/tech.html"
+                    ><strong class="navNum">03</strong> TECHNOLOGY</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="text-white myText">
+        <div class="text">
+          <p>SO, YOU WANT TO TRAVEL</p>
+        </div>
+        <div class="textSpace">
+          <h1>SPACE</h1>
+        </div>
+
+        <div class="lastText">
+          <p>
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </p>
+        </div>
+
+        <div>
+          <a href="">
+            <button class="btn circle">EXPLORE</button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <script src="../js/script.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

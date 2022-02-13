@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/destination.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+
+  <body class="destination">
+    <main class="destinationMain">
+      <nav
+        class="navbar navbar-expand-lg navbar-expand-md navbar-light fixed-top"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/html/index.html">
+            <img
+              src="../assets/shared/logo.svg"
+              alt="logo"
+              width=""
+              height=""
+            />
+          </a>
+          <button
+            class="navbar-toggler btn btn-close-white"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="text-light navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end myNavbar w-75"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header myXbtn">
+              <button
+                type="button"
+                class="btn-close text-reset btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end flex-grow-1 pe-3 navSystem"
+              >
+                <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="#"
+                    ><strong>00</strong> HOME</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="/html/destination.html"
+                    ><strong>01</strong> DESTINATION</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="/html/crew.html"
+                    ><strong>02</strong> CREW</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="/html/tech.html"
+                    ><strong>03</strong> TECHNOLOGY</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="text-white m-5" id="goated"></div>
+      <section class="mainSection" id="injection">
+        <div class="heading">
+          <h4><span class="opacity-25">01</span> PICK A DESTINATION</h4>
+        </div>
+        <div class="imgDiv">
+          <img src="../assets/destination/image-moon.webp" alt="" id="img" />
+        </div>
+        <div class="btnDiv">
+          <a id="moon" href="">MOON</a>
+          <a id="mars" href="">MARS</a>
+          <a id="europa" href="">EUROPA</a>
+          <a id="titan" href="">TITAN</a>
+        </div>
+        <div class="pageName">
+          <h2 id="header">MOON</h2>
+          <p id="body">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+        </div>
+        <div class="myLine"></div>
+        <div class="moreText">
+          <h5>AVG. DISTANCE</h5>
+          <h2 id="footer1">384,400KM</h2>
+          <h5>EST. TIME TRAVEL</h5>
+          <h2 id="footer2">3 DAYS</h2>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/destination.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
