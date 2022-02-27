@@ -8,40 +8,168 @@
   font-family: 'Bellefair', serif;
 }
 
-.myNavbar {
-  background-color: rgba(63, 63, 63, 0.596);
-  backdrop-filter: blur(15px);
-  width: 75%;
-  background-color: white;
-}
-
-.logo {
-  padding: 2rem;
-  color: green;
-}
-
-.navSystem a {
-  font-family: 'Barlow Condensed', sans-serif;
-  letter-spacing: 2.7px;
-}
-
+/* html {
+  overflow-y: scroll;
+} */
 body {
   background-image: url(../assets/home/background-home-desktop.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  overflow-y: scroll;
+}
+main {
+  padding: 4rem 3rem 4rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.myText {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  text-align: left;
+  /* margin-top: 10rem; */
+}
+.textBox {
+  width: 50vw;
+  text-align: left;
+  margin-top: 4rem;
+  margin-right: 13rem;
+}
+.circle {
+  width: 220px;
+  height: 220px;
+  line-height: 100px;
+  border-radius: 50%;
+  color: #000;
+  text-align: center;
+  background: #ffffff;
+  margin-top: 5rem;
+  box-shadow: none;
+  font-size: 2rem;
+}
+.text {
+  margin-top: 1rem;
+}
+.text p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2.7px;
+}
+.textSpace {
+  margin-top: 0.5rem 0;
+}
+.textSpace h1 {
+  font-family: 'Bellefair', serif;
+  font-size: 8rem;
+}
+.lastText {
+  width: 75%;
+}
+.lastText p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.2rem;
+  text-align: left;
+}
+.circle:hover {
+  box-shadow: 0px 0px 0px 37px #979797;
+}
+.circle button {
+  font-family: 'Bellefair', serif;
+  letter-spacing: 1.25px;
+}
+.myXbtn {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
 }
 
 /* Tablet Screen*/
 
 @media screen and (max-width: 992px) {
+  html {
+    overflow-y: scroll;
+  }
   body {
     background-image: url(../assets/home/background-home-tablet.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    overflow-y: scroll;
+  }
+  .myNavbar {
+    background-color: rgba(63, 63, 63, 0.596);
+    backdrop-filter: blur(15px);
+  }
+
+  main {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .myText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .textBox {
+    width: 50vw;
+    text-align: center;
+    margin-top: 4rem;
+    margin-right: 0rem;
+  }
+  .circle {
+    width: 220px;
+    height: 220px;
+    line-height: 100px;
+    border-radius: 50%;
+    color: #000;
+    text-align: center;
+    background: #ffffff;
+    margin-top: 5rem;
+    box-shadow: none;
+    font-size: 2rem;
+  }
+  .text {
+    margin-top: 1rem;
+  }
+  .text p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2.7px;
+  }
+  .textSpace {
+    margin-top: 0.5rem 0;
+  }
+  .textSpace h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 8rem;
+  }
+  .lastText {
+    width: 100%;
+  }
+  .lastText p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .circle:hover {
+    box-shadow: 0px 0px 0px 37px #979797;
+  }
+  .circle button {
+    font-family: 'Bellefair', serif;
+    letter-spacing: 1.25px;
+  }
+  .myXbtn {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
   }
 }
 
@@ -54,6 +182,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    width: 100vw;
   }
   .myNavbar {
     background-color: rgba(63, 63, 63, 0.596);
@@ -61,9 +190,18 @@ body {
   }
   .myText {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .textBox {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0rem;
   }
   .circle {
     width: 150px;
@@ -78,22 +216,23 @@ body {
     font-size: 1.3rem;
   }
   .text {
-    margin-top: 6rem;
+    margin-top: 1rem;
   }
   .text p {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 0.9rem;
-    letter-spacing: 2.7px;
+    letter-spacing: 3px;
   }
   .textSpace {
     margin-top: 0.5rem 0;
   }
   .textSpace h1 {
     font-family: 'Bellefair', serif;
-    font-size: 4rem;
+    font-size: 5rem;
   }
   .lastText {
-    width: 90%;
+    width: 80vw;
+    margin-top: 0.8rem;
   }
   .lastText p {
     font-family: 'Barlow', sans-serif;
@@ -112,9 +251,3 @@ body {
     align-self: flex-end;
   }
 }
-
-/* Font families */
-
-/* font-family: 'Barlow', sans-serif;
-font-family: 'Barlow Condensed', sans-serif;
-font-family: 'Bellefair', serif; */

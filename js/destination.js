@@ -13,22 +13,22 @@ const footer1 = document.querySelector('#footer1');
 const footer2 = document.querySelector('#footer2');
 
 fetch('../js/json/data.json')
-    .then((Response) => {
-        return Response.json();
-    })
+  .then((Response) => {
+    return Response.json();
+  })
 
-.then((data) => {
+  .then((data) => {
     const { destinations } = data;
 
     arrOfDestinations.map((destination, index) => {
-        destination.addEventListener('click', (e) => {
-            head.innerHTML = destinations[index].name;
-            body.innerHTML = destinations[index].description;
-            footer1.innerHTML = destinations[index].distance;
-            footer2.innerHTML = destinations[index].travel;
-            img.src = destinations[index].images.png;
+      destination.addEventListener('click', (e) => {
+        head.innerHTML = destinations[index].name.toUpperCase();
+        body.innerHTML = destinations[index].description;
+        footer1.innerHTML = destinations[index].distance.toUpperCase();
+        footer2.innerHTML = destinations[index].travel.toUpperCase();
+        img.src = destinations[index].images.png;
 
-            e.preventDefault();
-        });
+        e.preventDefault();
+      });
     });
-});
+  });

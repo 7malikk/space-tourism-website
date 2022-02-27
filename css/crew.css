@@ -7,89 +7,271 @@
   box-sizing: border-box;
   font-family: 'Bellefair', serif;
 }
-
-.myNavbar {
-  background-color: rgba(63, 63, 63, 0.596);
-  backdrop-filter: blur(15px);
-}
-
-.navSystem a {
-  font-family: 'Barlow Condensed', sans-serif;
-  letter-spacing: 2.7px;
+html {
+  overflow-y: scroll;
 }
 
 body {
-  background-image: url(../assets/home/background-home-desktop.jpg);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: auto;
+  overflow-y: scroll;
+}
+.bgImg {
+  background-image: url(../assets/crew/background-crew-tablet.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.everyOtherDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-left: 5rem;
+  width: 50%;
+}
+
+.heading {
+  color: white;
+  text-align: left;
+  margin-top: 2rem;
+}
+.heading h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2px;
+}
+.imgDiv {
+  display: none;
+}
+.imgDivTwo {
+  display: flex;
+  justify-content: end;
+  margin-top: 2rem;
+}
+.imgDivTwo img {
+  width: 80vh;
+}
+.btnDiv {
+  display: none;
+}
+.btnDivTwo {
+  display: flex;
+  justify-content: start;
+  margin-top: 2rem;
+}
+.myBtn {
+  padding: 5px 5px;
+  border-radius: 10px;
+  background-color: #979797;
+  border: none;
+}
+.btnDivTwo .myBtn:active {
+  background-color: white;
+}
+.btnDivTwo .myBtn:hover {
+  background-color: white;
+}
+.pageName {
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  margin-top: 4rem;
+}
+.pageName .anotherText {
+  font-family: 'Bellefair', serif;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
+.pageName .bio {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.2rem;
+  width: 95%;
+  align-self: start;
+}
+.pageName .moreText {
+  font-size: 1.8rem;
+  margin-top: 4rem;
+}
+.myLine {
+  display: none;
+}
+.moreText {
+  color: white;
+  text-align: start;
 }
 
 /* Tablet Screen*/
 
 @media screen and (max-width: 992px) {
-  body {
-    background-image: url(../assets/home/background-home-tablet.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+  html {
+    overflow-y: scroll;
   }
-}
 
-/* Mobile Screen */
-
-@media screen and (max-width: 600px) {
   body {
-    background-image: url(../assets/home/background-home-mobile.jpg);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: auto;
+    overflow-y: scroll;
+  }
+  .bgImg {
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
     background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-  }
-  .myNavbar {
-    background-color: rgba(63, 63, 63, 0.596);
-    backdrop-filter: blur(15px);
-  }
-  .myXbtn {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-end;
-  }
-  .destination {
-    background-image: url(../assets/crew/background-crew-mobile.jpg);
-    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
   }
+
   .mainSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 5rem;
-    padding: 2rem 1rem;
+  }
+  .everyOtherDiv {
+    display: block;
+    padding-left: 0;
+    width: 100%;
   }
   .heading {
     color: white;
-    text-align: center;
+    text-align: left;
+    margin-top: 3rem;
+    margin-left: 3rem;
   }
   .heading h4 {
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 2px;
   }
   .imgDiv {
+    display: none;
+  }
+  .imgDivTwo {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
-  .imgDiv img {
-    width: 60%;
-    height: 60%;
+  .imgDivTwo img {
+    width: 50vw;
   }
   .btnDiv {
+    display: none;
+  }
+  .btnDivTwo {
+    display: flex;
+    justify-content: space-around;
     margin-top: 2rem;
+  }
+  .myBtn {
+    padding: 5px 5px;
+    border-radius: 10px;
+    background-color: #979797;
+    border: none;
+  }
+  .btnDivTwo .myBtn:active {
+    background-color: white;
+  }
+  .btnDivTwo .myBtn:hover {
+    background-color: white;
+  }
+  .pageName {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 1.5rem;
+  }
+  .pageName .anotherText {
+    font-family: 'Bellefair', serif;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+  }
+  .pageName .bio {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    width: 95%;
+    align-self: center;
+  }
+  .pageName .moreText {
+    font-size: 1.8rem;
+  }
+  .myLine {
+    display: none;
+  }
+  .moreText {
+    color: white;
+    text-align: center;
+  }
+}
+
+/* Mobile Screen */
+
+@media screen and (max-width: 600px) {
+  html {
+    overflow-y: scroll;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: auto;
+  }
+  .bgImg {
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+
+  .mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 4.5rem;
+  }
+  .everyOtherDiv {
+    display: block;
+    padding-left: 0;
+    width: 100%;
+  }
+  .heading {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 0rem;
+  }
+  .heading h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 4px;
+    font-size: 1rem;
+  }
+  .imgDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .imgDivTwo {
+    display: none;
+  }
+  .imgDiv img {
+    width: 60vw;
+  }
+  .btnDivTwo {
+    display: none;
+  }
+  .btnDiv {
+    margin-top: 1.5rem;
     display: flex;
     justify-content: space-around;
   }
@@ -108,6 +290,9 @@ body {
   .pageName {
     color: white;
     text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
   }
   .pageName .moreText,
   .anotherText {
@@ -115,21 +300,24 @@ body {
   }
   .pageName .bio {
     font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+  }
+  .pageName .moreText {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  .pageName .anotherText {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
   }
   .myLine {
-    border-bottom: 2px solid #383b4b;
+    border-bottom: 3px solid #303341;
     width: 90%;
     align-self: center;
+    display: block;
   }
   .moreText {
     color: white;
     text-align: center;
-    margin-top: 2rem;
   }
 }
-
-/* Font families */
-
-/* font-family: 'Barlow', sans-serif;
-font-family: 'Barlow Condensed', sans-serif;
-font-family: 'Bellefair', serif; */

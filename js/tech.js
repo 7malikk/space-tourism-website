@@ -5,6 +5,7 @@ const arroflinks = [Link1, Link2, Link3];
 const techName = document.querySelector('#techName');
 const techInfo = document.querySelector('#techInfo');
 const landscape = document.querySelector('#landscape');
+const portrait = document.querySelector('#portrait');
 
 fetch('../js/json/data.json')
   .then((Response) => {
@@ -19,6 +20,7 @@ fetch('../js/json/data.json')
         techName.innerHTML = technology[index].name.toUpperCase();
         techInfo.innerHTML = technology[index].description;
         landscape.src = technology[index].images.landscape;
+        portrait.src = technology[index].images.portrait;
         e.preventDefault();
       });
     });

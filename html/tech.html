@@ -5,84 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="../css/tech.css" />
     <title>Frontend Mentor | Space tourism website</title>
   </head>
 
   <body class="destination">
     <main class="destinationMain">
-      <nav
-        class="navbar navbar-expand-lg navbar-expand-md navbar-light fixed-top"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/html/index.html">
-            <img
-              src="../assets/shared/logo.svg"
-              alt="logo"
-              width=""
-              height=""
-            />
-          </a>
-          <button
-            class="navbar-toggler btn btn-close-white"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="text-light navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end myNavbar w-75"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header myXbtn">
-              <button
-                type="button"
-                class="btn-close text-reset btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul
-                class="navbar-nav justify-content-end flex-grow-1 pe-3 navSystem"
-              >
-                <li class="nav-item">
-                  <a
-                    class="nav-link text-light"
-                    aria-current="page"
-                    href="/html/index.html"
-                    ><strong>00</strong> HOME</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="/html/destination.html"
-                    ><strong>01</strong> DESTINATION</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="/html/crew.html"
-                    ><strong>02</strong> CREW</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="/html/tech.html"
-                    ><strong>03</strong> TECHNOLOGY</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
+      <header class="primary-header flex">
+        <div>
+          <img src="/assets/shared/logo.svg" alt="logo" class="logo" />
         </div>
-      </nav>
-
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+        <nav>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-navigation flex"
+          >
+            <li class="active">
+              <a href="index.html"> <span aria-hidden="true">00</span>Home </a>
+            </li>
+            <li>
+              <a href="destination.html">
+                <span aria-hidden="true">01</span>Destination
+              </a>
+            </li>
+            <li>
+              <a href="crew.html"> <span aria-hidden="true">02</span>Crew </a>
+            </li>
+            <li>
+              <a href="tech.html">
+                <span aria-hidden="true">03</span>Technology
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="heading">
+        <h4><span class="opacity-25">03</span> SPACE LAUNCH 101</h4>
+      </div>
       <section class="mainSection">
-        <div class="heading">
-          <h4><span class="opacity-25">03</span> SPACE LAUNCH 101</h4>
-        </div>
         <div class="imgDiv">
           <img
             src="../assets/technology/image-launch-vehicle-landscape.jpg"
@@ -109,7 +78,7 @@
           </div>
         </div>
         <div class="pageName">
-          <h4 class="moreText">THE TECHNOLOGY...</h4>
+          <h4 class="moreText">THE TERMINOLOGY...</h4>
           <h2 class="anotherText" id="techName">LAUNCH VEHICLE</h2>
           <p class="bio" id="techInfo">
             A launch vehicle or carrier rocket is a rocket-propelled vehicle
@@ -119,10 +88,18 @@
             sight on the launch pad!
           </p>
         </div>
+        <div class="imgDivTwo">
+          <img
+            src="../assets/technology/image-launch-vehicle-portrait.jpg"
+            alt=""
+            id="portrait"
+          />
+        </div>
       </section>
     </main>
 
     <script src="../js/tech.js"></script>
+    <script src="/js/navbar.js"></script>
     <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
