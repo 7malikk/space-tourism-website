@@ -95,10 +95,11 @@ body {
   .primary-navigation {
     --gap: 3rem;
     padding-block: 2rem; /* addresses padding of top and bottom*/
-    padding-inline: clamp(
+    padding-inline: 3rem;
+    /* padding-inline: clamp(
       3rem,
       10vw,
       10rem
-    ); /* the smallest it can get is 3rem the biggest it can get is 10rem and the growth factor is 10vw*/
+    ); the smallest it can get is 3rem the biggest it can get is 10rem and the growth factor is 10vw */
   }
 }
