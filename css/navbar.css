@@ -91,15 +91,14 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (min-width: 35em) {
   .primary-navigation {
     --gap: 3rem;
     padding-block: 2rem; /* addresses padding of top and bottom*/
-    padding-inline: 3rem;
-    /* padding-inline: clamp(
-      3rem,
+    padding-inline: clamp(
+      1.5rem,
       10vw,
-      10rem
-    ); the smallest it can get is 3rem the biggest it can get is 10rem and the growth factor is 10vw */
+      15rem
+    ); /*the smallest it can get is 3rem the biggest it can get is 10rem and the growth factor is 10vw */
   }
 }
